@@ -13,10 +13,14 @@ chrome.tabs.executeScript({
 
 chrome.tabs.query({}, function(tabs) {
 	var arrayLength = tabs.length;
+	var text = "<ul>";
 for (var i = 0; i < arrayLength; i++) {
     chrome.tabs.executeScript({
     code: 'console.log("tab ' + i + ' has url ' + tabs[i].url + '")'
 });
+	text += "<li>" + tabs[i].url + "</li>";
+	text += "</ul>";
+document.getElementById("tester").innerHTML = text;
 }
 	
 });
