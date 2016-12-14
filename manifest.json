@@ -12,6 +12,7 @@
   },
   "permissions": [
     "activeTab",
+		"storage",
 		"tabs",
     "https://ajax.googleapis.com/",
 		"webRequestBlocking",
