@@ -13,6 +13,11 @@
 				width: 400px;
 				height: 300px;
       }
+			
+.my-handle {
+  cursor: move;
+  cursor: -webkit-grabbing;
+}
 		</style>
 
     <!--
@@ -21,12 +26,24 @@
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
-    <script src="popup.js"></script>
+    
   </head>
   <body>
 		<h1>hi this is a test</h1>
 		<div id="tester"></div>
+<button id="clickme">click me</button>
+		<br>
 
+		<!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+  
+  
+  <!-- Latest Sortable -->
+  <script src="sortable.js"></script>
+  
+  
+		<script src="popup.js"></script>
+		
   </body>
 
 </html>
