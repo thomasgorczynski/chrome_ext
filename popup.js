@@ -26,13 +26,14 @@ document.getElementById("tester").innerHTML = text;
 Sortable.create(listWithHandle, {
   handle: '.my-handle',
   animation: 150
-,// Changed sorting within list
-    onEnd: function (/**Event*/evt) {
+,// Changed sorting within list 
+	onEnd: function (/**Event*/evt) {
         evt.oldIndex;  // element's old index within parent
         evt.newIndex;  // element's new index within parent
         chrome.tabs.executeScript({
     code: 'console.log("tab is now ' +  evt.oldIndex + '")'
 });
+			//chrome.tabs.remove(222);
 		}
     });
 	
